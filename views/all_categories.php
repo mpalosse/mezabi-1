@@ -3,18 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mezabi - All categories</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 30%;
-        }
-
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-    </style>
+    <link rel="stylesheet" href="/mezabi-1/static/css/mezabi.css">
 </head>
 <body>
 
