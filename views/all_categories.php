@@ -24,12 +24,17 @@ use yasmf\HttpHelper;
         <th>Code</th>
         <th>Désignation</th>
         <th></th>
+        <th></th>
     </tr>
-    <?php while ($row = $searchStmt->fetch()) { ?>
+    <?php while ($row = $searchStmt->fetch()) {
+        $code = $row['code_categorie'];
+        $designation = $row['designation'];
+        ?>
         <tr>
-            <td><?php echo $row['code_categorie'] ?></td>
-            <td><?php echo $row['designation'] ?></td>
-            <td><a href="/mezabi-1?controller=Articles&code_categorie=<?php echo $row['code_categorie'] ?>&categorie=<?php echo $row['designation'] ?>">Voir les articles</a></td>
+            <td><?php echo $code ?></td>
+            <td><?php echo $designation ?></td>
+            <td><a href="/mezabi-1?controller=Articles&code_categorie=<?php echo $code ?>&categorie=<?php echo $designation ?>">Voir les articles</a></td>
+            <td><a href="/mezabi-1/edit-categorie.php?code_categorie=<?php echo $code ?>&categorie=<?php echo $designation ?>">Modifier la catégorie</a></td>
         </tr>
     <?php } ?>
 </table>
