@@ -1,8 +1,8 @@
 <?php
+const PREFIX_TO_RELATIVE_PATH = "/mezabi";
+require $_SERVER[ 'DOCUMENT_ROOT' ] . PREFIX_TO_RELATIVE_PATH . '/lib/vendor/autoload.php';
 
-spl_autoload_extensions(".php");
-spl_autoload_register();
-
+use application\DefaultComponentFactory;
 use yasmf\DataSource;
 use yasmf\Router;
 
@@ -15,5 +15,5 @@ $dataSource = new DataSource(
     $charset = 'utf8mb4'
 );
 
-$router = new Router() ;
-$router->route($dataSource);
+$router = new Router(new DefaultComponentFactory(), $dataSource) ;
+$router->route(PREFIX_TO_RELATIVE_PATH, $dataSource);

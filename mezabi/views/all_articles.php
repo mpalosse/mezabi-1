@@ -7,13 +7,6 @@
 </head>
 <body>
 
-<?php
-spl_autoload_extensions(".php");
-spl_autoload_register();
-
-use yasmf\HttpHelper;
-
-?>
 
 <h1>Mezabi</h1>
 

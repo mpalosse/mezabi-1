@@ -1,7 +1,7 @@
 {
-    "name": "mezabi-1",
+    "name": "mezabi/mezabi-1",
     "config": {
-      "vendor-dir": "mezabi-1/lib/vendor"
+      "vendor-dir": "mezabi/lib/vendor"
     },
     "repositories": [
       {
@@ -11,9 +11,9 @@
     ],
     "autoload": {
       "psr-4": {
-        "controllers\\": "mezabi-1/controllers",
-        "services\\": "mezabi-1/services",
-        "application\\": "mezabi-1/application"
+        "controllers\\": "mezabi/controllers",
+        "services\\": "mezabi/services",
+        "application\\": "mezabi/application"
       }
     },
     "require": {

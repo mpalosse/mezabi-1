@@ -8,8 +8,8 @@
 <body>
 
 <?php
-spl_autoload_extensions(".php");
-spl_autoload_register();
+const PREFIX_TO_RELATIVE_PATH = "/mezabi";
+require $_SERVER[ 'DOCUMENT_ROOT' ] . PREFIX_TO_RELATIVE_PATH . '/lib/vendor/autoload.php';
 
 use yasmf\HttpHelper;
 use yasmf\DataSource;

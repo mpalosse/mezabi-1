@@ -15,7 +15,7 @@ class ArticlesController {
             order by code_article";
         $searchStmt = $pdo->prepare($sql);
         $searchStmt->execute([$codeCategorie]);
-        $view = new View("mezabi/views/all_articles");
+        $view = new View("/views/all_articles");
         $view->setVar('searchStmt',$searchStmt);
         $view->setVar('categorie', $designationCategorie);
         return $view;
