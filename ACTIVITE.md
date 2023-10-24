@@ -25,7 +25,7 @@ $ docker-compose exec mezabi-1 composer update
 
 Accédez à l'application en utilisant cette URL :
 
-`http://localhost:8080/all_users/`
+`http://localhost:8080/mezabi/`
 
 Vérifiez que l'application fonctionne comme attendu.
 
