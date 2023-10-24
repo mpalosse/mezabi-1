@@ -1,27 +1,31 @@
-# Mezabo-1 ou une conception MVC perfectible
+# Mezabi-1 ou une conception MVC perfectible
 
 ## 1. Travail préliminaire
 
-### 1.0 Midification du fichier README
+### 1.1 Modification du fichier README
 
 Modifiez le fichier README avec vos nom, prénom et groupe de TP.
 
-> fix #1.0 Fichier README OK
-
-### 1.1. La base de données et son schéma
-
-Pour que le projet fonctionne, vous devez créer la base de données "mezabi-mvc" sur un serveur MySql.
-Le script SQL "mezabi-mvc.sql" dans le dossier "sql" doit être utilisé pour créer le schéma et remplir la base de données.
-
-> fix #1.1 Base de données créée
+> fix #1.1 Fichier README OK
 
 ### 1.2. Lancement de l'application
 
-Configuer la connexion à la base de données et déployer l'application "mezabi-1" dans votre environnement local.
 L'application permet :
+
 - de consulter la liste des catégories d'articles ;
-- de consulter  la liste des produits d'une catégorie ;
-- de modifier la désignationn d'une catégorie.
+- de consulter la liste des produits d'une catégorie ;
+- de modifier la désignation d'une catégorie.
+
+Pour lancer l'application, ouvrez un terminal et depuis la racine du projet, exécutez les instructions suivantes :
+
+```
+$ docker-compose up -d 
+$ docker-compose exec mezabi-1 composer update
+```
+
+Accédez à l'application en utilisant cette URL :
+
+`http://localhost:8080/all_users/`
 
 Vérifiez que l'application fonctionne comme attendu.
 

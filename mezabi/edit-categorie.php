@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mezabi - Edit category</title>
-    <link rel="stylesheet" href="/mezabi-1/static/css/mezabi.css">
+    <link rel="stylesheet" href="/mezabi/static/css/mezabi.css">
 </head>
 <body>
 
@@ -22,11 +22,11 @@ $message = null;
 if ($modeEdition) {
     try {
         $dataSource = new DataSource(
-            $host = 'localhost',
-            $port = '8889', # to change with the port your mySql server listen to
-            $db = 'mezabi', # to change with your db name
-            $user = 'root', # to change with your db user name
-            $pass = 'root', # to change with your db password
+            $host = 'mezabi-1-db',
+            $port = '3306', 
+            $db = 'mezabi-1', 
+            $user = 'mezabi-1', 
+            $pass = 'mezabi-1', 
             $charset = 'utf8mb4'
         );
 
@@ -43,7 +43,7 @@ if ($modeEdition) {
 
 <h1>Mezabi</h1>
 
-<a href="/mezabi-1">Catégories</a> > Edition catégorie
+<a href="/mezabi">Catégories</a> > Edition catégorie
 
 <h2>Catégorie <?php echo $code ?></h2>
 

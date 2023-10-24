@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mezabi - All articles</title>
-    <link rel="stylesheet" href="/mezabi-1/static/css/mezabi.css">
+    <link rel="stylesheet" href="/mezabi/static/css/mezabi.css">
 </head>
 <body>
 
@@ -17,7 +17,7 @@ use yasmf\HttpHelper;
 
 <h1>Mezabi</h1>
 
-<a href="/mezabi-1">Catégories</a> > Articles
+<a href="/mezabi">Catégories</a> > Articles
 
 <h2>Articles de la catégorie <?php echo $categorie ?></h2>
 

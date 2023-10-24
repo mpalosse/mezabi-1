@@ -11,7 +11,7 @@ class HomeController {
             order by code_categorie";
         $searchStmt = $pdo->prepare($sql);
         $searchStmt->execute();
-        $view = new View("mezabi-1/views/all_categories");
+        $view = new View("mezabi/views/all_categories");
         $view->setVar('searchStmt',$searchStmt);
         return $view;
     }
