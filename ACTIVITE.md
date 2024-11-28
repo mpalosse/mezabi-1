@@ -19,9 +19,27 @@ L'application permet :
 Pour lancer l'application, ouvrez un terminal et depuis la racine du projet, exécutez les instructions suivantes :
 
 ```
-$ docker-compose up -d 
-$ docker-compose exec mezabi-1 composer update
+$ docker compose up -d 
+$ docker compose exec mezabi-1 composer update
 ```
+
+Github va vous demander un token.
+Vous pouvez en générer un via le site Github en suivant les étapes suivantes :
+- clique sur votre Profil (en haut à droite)
+- Settings
+- <> Developper Settings (en bas à gauche)
+- Personnal acces token > Tokens (classic) (en haut à gauche)
+- Generetate new token > Generetate new token (classic)
+- Note : nommez votre token (exemple : docker)
+- Expiration > custom : sélectionnez une date après la fin de l'année scolaire (en juillet)
+- Generate Token (tout en bas de la page)
+
+Si vous utilisez une clé SSH pour vous authentifier sur Github, vous aurez besoin d'ajouter un token à la commande composer, avant d'executer composer update :
+```
+$ docker compose exec mezabi-1 composer config --global github-oauth.github.com <token>
+```
+où <token> est le code généré lors de la procédure de génération de token.
+
 
 Accédez à l'application en utilisant cette URL :
 
