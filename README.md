@@ -3,6 +3,6 @@
 ### NOM : XXX
 ### Prénom : YYY
 ### Groupe de TP :
-- [ ] A1
-- [x] A2-A4-D
-- [ ] A3
+- [ ] A1-A2
+- [x] A3-A4
+- [ ] D
